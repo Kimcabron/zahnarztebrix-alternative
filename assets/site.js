@@ -99,9 +99,10 @@ galerie();
 /* ---------- Laufband für Praxisferien & Hinweise ----------
    Der Text steht in einer Google-Tabelle (Datei → Freigeben → Im Web veröffentlichen → CSV).
    Die Adresse des CSV-Links kommt hier hinein. Leer lassen = kein Laufband.
-   Tabelle: Zeile 1 = Überschriften, ab Zeile 2 je Zeile: Text | Von | Bis
+   Einfachste Nutzung: Text in Zelle A1 schreiben = Laufband an, Zelle leeren = Laufband aus.
+   Optional (weitere Zeilen möglich): Spalte A = Text, B = Von, C = Bis
    (Datum als TT.MM.JJJJ oder JJJJ-MM-TT; "Von"/"Bis" dürfen leer bleiben). */
-const LAUFBAND_CSV = "";
+const LAUFBAND_CSV = "https://docs.google.com/spreadsheets/d/1-0pkiOZrhKh2bS8Csy2AUB_MSs2v6Adnt1IXYG9syDg/gviz/tq?tqx=out:csv&headers=0";
 
 (function laufband() {
   if (!LAUFBAND_CSV) return;
@@ -133,7 +134,7 @@ const LAUFBAND_CSV = "";
     .then((r) => (r.ok ? r.text() : Promise.reject()))
     .then((text) => {
       const heute = heuteBerlin();
-      const texte = csv(text).slice(1)
+      const texte = csv(text)
         .filter(([t, von, bis]) => {
           if (!(t || "").trim()) return false;
           const v = alsIso(von), b = alsIso(bis);
