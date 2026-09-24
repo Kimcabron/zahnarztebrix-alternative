@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team – Zahnarztpraxis Brix, Haldensleben</title>
+  <meta name="description" content="Andrea und Oliver Brix und ihr Praxisteam in Haldensleben-Althaldensleben.">
+  <link rel="canonical" href="https://www.zahnarztpraxis-brix.com/team.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Team – Zahnarztpraxis Brix, Haldensleben">
+  <meta property="og:description" content="Andrea und Oliver Brix und ihr Praxisteam in Haldensleben-Althaldensleben.">
+  <meta property="og:image" content="https://www.zahnarztpraxis-brix.com/assets/img/og-brix.jpg">
+  <meta name="theme-color" content="#1f3b95">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<!-- @header -->
+<script>
+  /* vorläufig: Farbvarianten vergleichen (?farbe=a|b|c|d|e) */
+  (function () {
+    var f = new URLSearchParams(location.search).get("farbe");
+    try { if (f) sessionStorage.setItem("farbe", f); else f = sessionStorage.getItem("farbe"); } catch (e) {}
+    if (f && f !== "a") document.documentElement.dataset.farbe = f;
+  })();
+</script>
+<div class="farbwahl" aria-label="Farbvariante wählen">Farben
+  <a href="?farbe=a" data-f="a">A</a><a href="?farbe=b" data-f="b">B</a><a href="?farbe=c" data-f="c">C</a><a href="?farbe=d" data-f="d">D</a><a href="?farbe=e" data-f="e">E</a>
+</div>
+<script>
+  document.querySelectorAll(".farbwahl a").forEach(function (a) {
+    a.setAttribute("aria-current", String((document.documentElement.dataset.farbe || "a") === a.dataset.f));
+  });
+</script>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+<header class="site-header">
+  <div class="wrap header__inner">
+    <a class="brand" href="index.html" aria-label="Zahnarztpraxis Brix – zur Startseite">
+      <img src="assets/img/logo-320.webp" srcset="assets/img/logo-320.webp 1x, assets/img/logo-640.webp 2x" width="320" height="84" alt="Zahnarztpraxis Brix – einfach gesund lachen">
+    </a>
+    <nav class="nav" id="hauptmenue" aria-label="Hauptmenü">
+      <ul>
+        <li><a class="nav__link" href="index.html">Start</a></li>
+        <li><a class="nav__link" href="leistungen.html">Leistungen</a></li>
+        <li><a class="nav__link" href="team.html" aria-current="page">Team</a></li>
+        <li><a class="nav__link" href="praxis.html">Praxis</a></li>
+        <li><a class="nav__link" href="kontakt.html">Kontakt &amp; Anfahrt</a></li>
+      </ul>
+      <div class="nav__extra">
+        <a class="btn btn--primary" href="tel:+49390444113"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Termin: 03904 44113</a>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Damm%C3%BChlenweg%2013%2C%2039340%20Haldensleben" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Route planen</a>
+        <p>Dammühlenweg 13, 39340 Haldensleben (Althaldensleben)</p>
+        <p data-open-status></p>
+      </div>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hauptmenue"><span class="menu-toggle__bars" aria-hidden="true"><span></span></span><span class="menu-toggle__label">Menü</span></button>
+    <a class="btn btn--primary header__call" href="tel:+49390444113" aria-label="Anrufen: 03904 44113"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>03904 44113</span></a>
+  </div>
+</header>
+<!-- /@header -->
+
+<main id="inhalt">
+  <section class="page-head">
+    <div class="wrap">
+      <p class="breadcrumb"><a href="index.html">Start</a> / Team</p>
+      <h1>Unser Team</h1>
+      <p class="lead">Erfahrung und Kompetenz für Ihre Zahngesundheit.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap doctors">
+      <div class="photo"><img src="assets/img/brix-800.webp" srcset="assets/img/brix-480.webp 480w, assets/img/brix-800.webp 800w" sizes="(max-width: 859px) 92vw, 600px" width="800" height="533" alt="Andrea und Oliver Brix"></div>
+      <div>
+        <p class="eyebrow">Zahnärzte &amp; Praxisinhaber</p>
+        <h2>Andrea &amp; Oliver Brix</h2>
+        <p class="quote">„Mit über 35 Jahren Erfahrung in der Zahnheilkunde führen wir gemeinsam unsere Praxis mit Leidenschaft und Fachwissen.“</p>
+        <p>Unser Ziel ist es, Ihnen die bestmögliche zahnmedizinische Betreuung zu bieten.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--wall">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Praxisteam</p>
+        <h2>Unser Praxisteam</h2>
+        <p class="lead">Unser erfahrenes Team steht Ihnen mit Kompetenz und Freundlichkeit zur Seite. Jeder bringt seine Expertise ein, um Ihnen den bestmöglichen Service zu bieten.</p>
+      </div>
+      <ul class="faces">
+        <li class="face"><div class="face__img"><img src="assets/img/behlert-480.webp" width="480" height="320" alt="Porträt von Andrea Behlert" loading="lazy"></div><strong>Andrea Behlert</strong><span>Zahnmedizinische Fachangestellte</span></li>
+        <li class="face"><div class="face__img"><img src="assets/img/volkmann-480.webp" width="480" height="320" alt="Porträt von Solvig Volkmann" loading="lazy"></div><strong>Solvig Volkmann</strong><span>Zahnmedizinische Fachangestellte</span></li>
+        <li class="face"><div class="face__img"><img src="assets/img/moehring-480.webp" width="480" height="320" alt="Porträt von Anne Möhring" loading="lazy"></div><strong>Anne Möhring</strong><span>Zahnmedizinische Prophylaxehelferin</span></li>
+        <li class="face"><div class="face__img"><img src="assets/img/feldmann-480.webp" width="480" height="320" alt="Porträt von Doreen Feldmann" loading="lazy"></div><strong>Doreen Feldmann</strong><span>Zahnmedizinische Verwaltungsangestellte</span></li>
+        <li class="face"><div class="face__img"><img src="assets/img/grimm-480.webp" width="480" height="362" alt="Porträt von Madelyn Grimm" loading="lazy"></div><strong>Madelyn Grimm</strong><span>Zahnmedizinische Fachangestellte</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="photo-stack">
+        <div class="photo"><img src="assets/img/beratung-800.webp" srcset="assets/img/beratung-480.webp 480w, assets/img/beratung-800.webp 800w" sizes="(max-width: 859px) 80vw, 480px" width="800" height="600" alt="Oliver Brix im Gespräch in der Praxis" loading="lazy"></div>
+        <div class="photo"><img src="assets/img/empfang-480.webp" width="480" height="360" alt="Am Empfang der Praxis" loading="lazy"></div>
+      </div>
+      <div>
+        <p class="eyebrow">Gemeinsam</p>
+        <h2>Unser gemeinsames Ziel</h2>
+        <p class="lead">Die bestmögliche zahnmedizinische Betreuung – mit einem Team, das Sie am Empfang, bei der Prophylaxe und in der Behandlung persönlich begleitet.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="tel:+49390444113"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Termin: 03904 44113</a>
+          <a class="btn btn--ghost" href="praxis.html">Praxis ansehen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- @footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <p>Zahnarztpraxis Brix<br><em>einfach gesund lachen</em></p>
+        <address>
+          Andrea &amp; Oliver Brix<br>
+          Dammühlenweg 13<br>
+          39340 Haldensleben (Althaldensleben)
+        </address>
+      </div>
+      <div>
+        <h2>Kontakt</h2>
+        <ul>
+          <li>Telefon: <a href="tel:+49390444113">03904 44113</a></li>
+          <li>Telefax: 03904 710781</li>
+          <li><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Damm%C3%BChlenweg%2013%2C%2039340%20Haldensleben" target="_blank" rel="noopener">Route planen</a></li>
+          <li><a href="http://www.zbd-boerdekreis.de/seite/294524/hdl.html" target="_blank" rel="noopener">Zahnärztlicher Notdienst</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Sprechzeiten</h2>
+        <table class="hours hours--compact">
+          <tbody>
+            <tr data-days="1 2 3"><th scope="row">Mo – Mi</th><td>08:00 – 12:00<br>14:00 – 18:00</td></tr>
+            <tr data-days="4 5"><th scope="row">Do – Fr</th><td>08:00 – 12:00</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>Seiten</h2>
+        <ul>
+          <li><a href="leistungen.html">Leistungen</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="praxis.html">Praxis</a></li>
+          <li><a href="kontakt.html">Kontakt &amp; Anfahrt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span data-year>2025</span> Zahnarztpraxis Brix</p>
+      <ul>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<nav class="actionbar" aria-label="Schnellzugriff">
+  <a class="actionbar__call" href="tel:+49390444113"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Anrufen</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Damm%C3%BChlenweg%2013%2C%2039340%20Haldensleben" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Route</a>
+  <a href="kontakt.html#sprechzeiten"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Zeiten</a>
+</nav>
+<script src="assets/site.js" defer></script>
+<!-- /@footer -->
+</body>
+</html>
